@@ -7,7 +7,7 @@ import os
 t = datetime.now()
 
 print("logging in...")
-session = sa.login(os.environ['SCRATCH_USERNAME'], os.environ['SCRATCH_PASSWORD'])
+session = sa.login_by_id(os.environ['SCRATCH_SESSION_ID'])
 print("logged in!")
 
 print("getting data...")
