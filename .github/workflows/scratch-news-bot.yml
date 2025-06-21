@@ -19,6 +19,6 @@ jobs:
       - run: pip install scratchattach
 
       - env:
-          SCRATCH_SESSION_ID: ${{ secrets.SCRATCH_SESSION_ID }}
           SCRATCH_USERNAME: ${{ secrets.SCRATCH_USERNAME }}
+          SCRATCH_PASSWORD: ${{ secrets.SCRATCH_PASSWORD }}
         run: python bot.py
