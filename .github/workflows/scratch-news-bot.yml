@@ -20,4 +20,5 @@ jobs:
 
       - env:
           SCRATCH_SESSION_ID: ${{ secrets.SCRATCH_SESSION_ID }}
+          SCRATCH_USERNAME: ${{ secrets.SCRATCH_USERNAME }}
         run: python bot.py
